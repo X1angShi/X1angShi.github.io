@@ -17,51 +17,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
 <!--[if lt IE 9]><script src="js/html5shiv.js"></script><![endif]-->
 <!--[if lt IE 9]><script src="js/respond.js"></script><![endif]-->
- <script language="javascript">
-
-var t = null;
-
-t = setTimeout(time,1000);//开始执行
-
-function time()
-
-{
-
-clearTimeout(t);//清除定时器
-
-dt = new Date();
-
-var y=dt.getYear()+1900;
-
-var mm=dt.getMonth()+1;
-
-var d=dt.getDate();
-
-var weekday=["星期日","星期一","星期二","星期三","星期四","星期五","星期六"];
-
-var day=dt.getDay();
-
-var h=dt.getHours();
-
-var m=dt.getMinutes();
-
-var s=dt.getSeconds();
-
-if(h<10){h="0"+h;}
-
-if(m<10){m="0"+m;}
-
-if(s<10){s="0"+s;}
-
-document.getElementById("timeShow").innerHTML =  "现在的时间为："+y+"年"+mm+"月"+d+"日"+weekday[day]+"      
-
-"+h+":"+m+":"+s+"";
-
-t = setTimeout(time,1000); //设定定时器，循环执行           
-
-}
-
-  </script> <!-- 显示日期 -->
+ 
 </head>
 
 <body>
@@ -174,7 +130,7 @@ t = setTimeout(time,1000); //设定定时器，循环执行
                                         <span class="typed-title"></span>
                                     </div>
                                 </div>
-                                <div class="text"><font color="white"><span id="timeShow"></span> </div>
+                              
                                 <div class="text"><font color="white">Welcome to my blog! NO.<span id="busuanzi_value_site_pv"></span> visitor!</div>
                                 <div class="link-btn">
                                     <a href="Files/Xiang‘s cv.pdf" class="theme-btn btn-style-one"><font color="white"><strong>Download CV</strong></a>
