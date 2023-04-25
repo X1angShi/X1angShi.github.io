@@ -17,6 +17,11 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
 <!--[if lt IE 9]><script src="js/html5shiv.js"></script><![endif]-->
 <!--[if lt IE 9]><script src="js/respond.js"></script><![endif]-->
+  <script>
+    var today = new Date();
+    var date = today.getFullYear()+'年'+(today.getMonth()+1)+'月'+today.getDate()+'日';
+    document.getElementById("date").innerHTML = date;
+  </script> <!-- 显示日期 -->
 </head>
 
 <body>
@@ -129,7 +134,7 @@
                                         <span class="typed-title"></span>
                                     </div>
                                 </div>
-                                <div class="text"><font color="white">Welcome to my blog! NO.<span id="busuanzi_value_site_pv"></span> visitor!</div>
+                                <div class="text"><font color="white"> Today is <span id="date"></span>. Welcome to my blog! NO.<span id="busuanzi_value_site_pv"></span> visitor!</div>
                                 <div class="link-btn">
                                     <a href="Files/Xiang‘s cv.pdf" class="theme-btn btn-style-one"><font color="white"><strong>Download CV</strong></a>
                                     <a href="#" class="theme-btn btn-style-two"><font color="white"><strong>Contact Me</font color="white"></strong></a>
